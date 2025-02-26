@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>7 Days of Code</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>7 Days of Code</h1>
+        <h2>Day Two of Coding: Variables</h2>
+    </div>
+
+    <form class="form" id="form">
+        <legend>Formulario de preguntas</legend>
+
+        <label for="name">¿Cuál es tu nombre?</label>
+        <input type="'text" id="name" placeholder="Escribe tu nombre" required>
+
+        <label for="age">¿Cuántos años tienes?</label>
+        <input type="number" id="age" placeholder="Escribe tu edad" required>
+
+        <label for="language">¿Qué lenguaje de programación estás estudiando?</label>
+        <input type="text" id="language" placeholder="Escribe el lenguaje de programación" required>
+
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <!--Elemento para mostrar respuesta-->
+    <p id="respuesta"></p>
+
+    <div id="modal" class="modal">
+        <p id="modalMessage"></p>
+        <input type="text" id="modalInput" placeholder="1 para sí, 2 para no" />
+        <button onclick="handleModal();">Enviar</button>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+
+</html>
